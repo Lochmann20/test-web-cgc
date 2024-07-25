@@ -137,7 +137,7 @@ export default function Menu() {
     <nav className='p-5'>
         <ul className='sm:flex hidden justify-between gap-3'>
             <li className='flex gap-3'>
-                <Link href="/Contact" prefetch={false}>Gallery</Link>
+                <Link href="/Gallery" prefetch={false}>Gallery</Link>
                 <Link href="/About" prefetch={false}>About</Link>
             </li>
 
