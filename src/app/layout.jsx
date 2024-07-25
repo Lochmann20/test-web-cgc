@@ -1,8 +1,5 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Menu from "./components/Menu";
-
-const inter = Inter({ subsets: ["latin"] });
+import Menu from "../components/Menu";
 
 export const metadata = {
   title: "CGC Wargaming",
@@ -12,9 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Menu />
-        {children}
+      <body>
+        <main className="max-w-6xl mx-auto">
+          <Menu />
+          {children}
+        </main>
       </body>
     </html>
   );
