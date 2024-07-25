@@ -22,13 +22,13 @@ export default function ImageGallery() {
   }, []);
 
   return (
-    <div className="grid md:flex">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
       {images.map((image) => (
         <Link href={`/Gallery/${encodeURIComponent(image.name)}`} key={image.name}>
           <img
             src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${image.name}`}
             alt={image.name}
-            className="cursor-pointer"
+            className="cursor-pointer border-2 border-solid rounded-xl"
           />
         </Link>
       ))}
