@@ -1,5 +1,5 @@
 import "./globals.css";
-import Menu from "../components/Menu";
+import Menu from "./components/Menu";
 
 export const metadata = {
   title: "CGC Wargaming",

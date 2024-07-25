@@ -1,9 +1,12 @@
-import React from 'react'
+// pages/contact.js
+import ContactFormular from '@/app/components/ContactFormular';
 
-function contact() {
+const Contact = () => {
   return (
-    <div>contact</div>
-  )
-}
+    <div className="min-h-screen flex items-center justify-center">
+      <ContactFormular />
+    </div>
+  );
+};
 
-export default contact
+export default Contact;

@@ -60,7 +60,7 @@ export default function Menu() {
                 <Link href="/About" prefetch={false}>About</Link>
                 <Link href="/Warhammer" prefetch={false}>Warhammer</Link>
                 <Link href="/Gallery" prefetch={false}>Gallery</Link>
-                <Link href="/Contact" prefetch={false}>Contact</Link>
+                <Link href="/Pages" prefetch={false}>Contact</Link>
                 <Link href="/" prefetch={false}>IG</Link>
                 <Link href="/" prefetch={false}>Mail</Link>
             </li>
@@ -73,7 +73,7 @@ export default function Menu() {
         <ul className='sm:flex hidden justify-between gap-3'>
             <li className='flex gap-3'>
                 <Link href="/Warhammer" prefetch={false}>Warhammer</Link>
-                <Link href="/Gallery" prefetch={false}>Gallery</Link>
+                <Link href="/Contact" prefetch={false}>Gallery</Link>
             </li>
 
             <li>

@@ -1,4 +1,4 @@
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@/app/lib/supabaseClient';
 import { notFound } from 'next/navigation'; // For handling 404s
 import { use } from 'react';
 
