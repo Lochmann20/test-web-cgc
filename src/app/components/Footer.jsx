@@ -3,13 +3,13 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function footer() {
-
   return (
     <div className=''>
-        <hr className='text-white'/>
+      <hr className='text-white'/>
 
     <div className='p-5 flex justify-center'>   
         {/* Insta */}
+        <div>
         <Link href="https://www.instagram.com/cgc_minis?igsh=OGl6MjdmcXBxbmcz" prefetch={false}>
         <svg 
         version="1.0" 
@@ -42,6 +42,7 @@ export default function footer() {
         </g>
         </svg>
        </Link>
+       </div> 
     </div>
     </div>
   )

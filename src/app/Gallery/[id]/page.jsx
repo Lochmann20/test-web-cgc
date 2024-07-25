@@ -1,6 +1,7 @@
 import { supabase } from '@/app/lib/supabaseClient';
 import { notFound } from 'next/navigation'; // For handling 404s
 import { use } from 'react';
+import Footer from '@/app/components/footer'
 
 // Fetch data function
 async function fetchImageData(id) {
@@ -28,12 +29,17 @@ export default async function ImagePage({ params }) {
   }
 
   return (
+    <>
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">{image.name}</h1>
       <div className="flex justify-center">
         <img src={image.url} alt={image.name} className="max-w-full rounded-lg shadow-lg" />
       </div>
+
+      
     </div>
+    <Footer />
+    </>
   );
 }
 

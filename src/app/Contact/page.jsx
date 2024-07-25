@@ -115,6 +115,8 @@ const Contact = () => {
    </div>
   </div>
 
+  <hr className="text-white"/>
+
     </div>
   );
 };

@@ -61,7 +61,7 @@ export default function Menu() {
             <li className='grid text-center gap-3' onClick={toggleMenu}>
                 <Link href="/About" prefetch={false}>About</Link>
                 <Link href="/Gallery" prefetch={false}>Gallery</Link>
-                <Link href="/Pages" prefetch={false}>Contact</Link>
+                <Link href="/Contact" prefetch={false}>Contact</Link>
 
                 <div className='py-10 grid gap-3'>
                 <div className="flex justify-center gap-5">

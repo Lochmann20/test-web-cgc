@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <main className="container mx-auto p-4">
-        <h1 className="p-5">Gallery</h1>
+        {/* <h1 className="p-5">Gallery</h1> */}
         <Gallery />
       </main>
     </div>
