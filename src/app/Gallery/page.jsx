@@ -1,37 +1,16 @@
-'use client';
+import Head from 'next/head';
+import Gallery from '@/components/Gallery';
 
-import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabaseClient';
-import Link from 'next/link';
-
-export default function ImageGallery() {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    const fetchImages = async () => {
-      const { data, error } = await supabase.storage.from('CGC-Wargaming').list('');
-
-      if (error) {
-        console.error('Error fetching images: ', error);
-      } else {
-        setImages(data);
-      }
-    };
-
-    fetchImages();
-  }, []);
+export default function Home() {
+  console.log('Supabase URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
+  console.log('Supabase ANON KEY:', process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
   return (
-    <div className="grid grid-cols-3 gap-4">
-      {images.map((image) => (
-        <Link href={`/Gallery/${encodeURIComponent(image.name)}`} key={image.name}>
-          <img
-            src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${image.name}`}
-            alt={image.name}
-            className="cursor-pointer"
-          />
-        </Link>
-      ))}
+    <div>
+      <main className="container mx-auto p-4">
+        <h1 className="text-2xl font-bold mb-4">Image Gallery</h1>
+        <Gallery />
+      </main>
     </div>
   );
 }

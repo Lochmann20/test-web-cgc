@@ -37,7 +37,7 @@ export default function Menu() {
         </div>
     </nav>  
 
-    <div className={`fixed inset-0 bg-BlackBlack text-White transition-transform transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} z-50 sm:hidden flex flex-col`}>
+    <div className={`fixed inset-0 bg-black text-White transition-transform transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} z-50 sm:hidden flex flex-col`}>
         <div  className='p-5 flex justify-end bg-black'>
             <button
             className="text-White"
@@ -56,11 +56,11 @@ export default function Menu() {
         </div>
 
         <ul className=''>
-            <li className='grid text-center gap-3'>
-                <Link href="/" prefetch={false}>About</Link>
-                <Link href="/" prefetch={false}>Warhammer</Link>
-                <Link href="/" prefetch={false}>Gallery</Link>
-                <Link href="/" prefetch={false}>Contact</Link>
+            <li className='grid text-center gap-3' onClick={toggleMenu}>
+                <Link href="/About" prefetch={false}>About</Link>
+                <Link href="/Warhammer" prefetch={false}>Warhammer</Link>
+                <Link href="/Gallery" prefetch={false}>Gallery</Link>
+                <Link href="/Contact" prefetch={false}>Contact</Link>
                 <Link href="/" prefetch={false}>IG</Link>
                 <Link href="/" prefetch={false}>Mail</Link>
             </li>
