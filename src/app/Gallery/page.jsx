@@ -24,15 +24,18 @@ export default function ImageGallery() {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-3 gap-5">
+    <>
+    <h1 className='text-3xl p-5'>Gallery</h1>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-5 p-5">
       {images.map((image) => (
         <Link href={`/Gallery/${encodeURIComponent(image.name)}`} key={image.name}>
           <div className="cursor-pointer border-2 border-solid rounded-xl p-2">
-            <ModelViewer  url={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${image.name}`} />
+            <ModelViewer url={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${image.name}`} />
           </div>
         </Link>
       ))}
     </div>
+    </>
   );
 }
 

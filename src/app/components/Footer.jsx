@@ -7,7 +7,7 @@ export default function footer() {
     <div className=''>
       <hr className='text-white'/>
 
-      <div className='grid p-2'>
+      <div className='grid p-2 md:flex md:justify-between'>
         {/* Mail */}
         <div className='flex gap-2 items-center'>
           <svg 

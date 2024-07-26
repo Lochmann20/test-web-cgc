@@ -35,7 +35,7 @@ function FitCamera() {
 
 export default function ModelViewer({ url, small = false }) {
   return (
-    <Canvas style={{ height: small ? '200px' : '500px', width: '100%' }} camera={{fov: 50}} >
+    <Canvas style={{ height: small ? '200px' : '250px', width: '100%' }} camera={{fov: 50}} >
       <Suspense fallback={null}>
         <ambientLight intensity={0.3} />
         <pointLight position={[10, 10, 10]} intensity={0.8} />

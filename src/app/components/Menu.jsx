@@ -18,7 +18,7 @@ export default function Menu() {
     <nav className='sm:hidden p-5'>
       <div className='flex justify-between bg-menu-mobil-bg rounded-full px-3 items-center'>
         <div>
-            <Link href="/" prefetch={false} className='text-cgc-logo'>CGC Wargaming</Link>
+            <Link href="/" prefetch={false} className='text-cgc-logo font-serif'>CGC</Link>
         </div> 
 
         <div className=''> 
@@ -142,7 +142,7 @@ export default function Menu() {
             </li>
 
             <li>
-                <Link href="/" prefetch={false} className='text-cgc-logo'>CGC Wargaming</Link>
+                <Link href="/" prefetch={false} className='text-cgc-logo'>CGC</Link>
             </li>
 
             <li className='flex gap-3'>
