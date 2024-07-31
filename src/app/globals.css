@@ -10,7 +10,12 @@
   }
 }
 
-body {
+body{
+  background: rgb(40,47,66);
+  background: radial-gradient(circle, rgba(40,47,66,1) 0%, rgba(24,26,37,1) 55%, rgba(40,47,66,1) 100%);   
+}
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -18,5 +23,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
+
+
 

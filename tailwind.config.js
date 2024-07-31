@@ -10,7 +10,9 @@ module.exports = {
       'cgc-logo': '#E1B37B',
       'menu-mobil-bg': '#181818',
       'Black': '#000',
+      'White': '#fff',
       'cgc-tekst': '#7f7f7f',
+      'contact-bg': '#18181873',
     },
     extend: {
       backgroundImage: {

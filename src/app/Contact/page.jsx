@@ -2,9 +2,18 @@
 
 const Contact = () => {
   return (
-    <div className="md:w-96 m-auto ">
-      <h1 className="text-6xl p-5 font-serif">Contact</h1>
+    <>
+    <section className="grid sm:flex sm:justify-between gap-5">
+      <div className="p-5 text-White sm:w-1/2 sm:mt-32 ">
+        <h1 className="text-6xl font-serif">Contact</h1> <br /> 
+        <p>Har du eller en du kender brug for hjælp. <br /> 
+          Så stiller jeg meget med glæde til rådighed med mine færdigheder og tricks. Jeg samler hovedsageligt Black Templars og Deathguards fra Warhammer 40k. Jeg vil gerne stå til rådhed når der er brug for det. <br />
+          Om det er en hel hær, commander eller primarch skal laves mere iøjenfaldende. Jeg kan kontaktes på både telefonnummer, <br />
+          mail eller via min instagram.
+        </p>
+      </div>
 
+    <div className="text-White sm:w-1/2 sm:mt-32">
       <hr className="text-white"/>
 
     <div className="grid p-5 gap-3">
@@ -78,7 +87,7 @@ const Contact = () => {
       -5 487 -364 1067 -799z"/>
       </g>
       </svg>
-      <p>cgc-wargaming@gmail.com</p>
+      <p>cgcminiatures@gmail.com</p>
       </div>
     </div>
 
@@ -126,6 +135,8 @@ const Contact = () => {
   <hr className="text-white"/>
 
   </div>
+  </section>
+  </>
   );
 };
 

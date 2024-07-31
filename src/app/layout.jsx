@@ -11,10 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Menu />
         <main className="max-w-6xl mx-auto">
-          <Menu />
           {children}
-          {/* <Footer /> */}
         </main>
       </body>
     </html>

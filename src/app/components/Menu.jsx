@@ -16,9 +16,9 @@ export default function Menu() {
     <>   
 {/*Mobil menu  */}
     <nav className='sm:hidden p-5'>
-      <div className='flex justify-between bg-menu-mobil-bg rounded-full px-3 items-center'>
+      <div className='flex justify-between bg-transparent border-2 border-solid border-cgc-logo rounded-full px-3 items-center'>
         <div>
-            <Link href="/" prefetch={false} className='text-cgc-logo font-serif'>CGC</Link>
+            <Link href="/" prefetch={false} className='text-cgc-logo font-serif'>CGC W<span className='uppercase text-xs'>argaming</span></Link>
         </div> 
 
         <div className=''> 
@@ -26,7 +26,7 @@ export default function Menu() {
           className='sm:hidden'
           onClick={toggleMenu}>
               <svg
-                className="w-8 h-8 mt-2"
+                className="w-8 h-8 mt-2 text-cgc-logo"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -59,9 +59,9 @@ export default function Menu() {
 
         <ul className=''>
             <li className='grid text-center gap-3' onClick={toggleMenu}>
-                <Link href="/About" prefetch={false}>About</Link>
-                <Link href="/Gallery" prefetch={false}>Gallery</Link>
-                <Link href="/Contact" prefetch={false}>Contact</Link>
+                <Link href="/About" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo'>About</Link>
+                <Link href="/Gallery" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo'>Gallery</Link>
+                <Link href="/Contact" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo'>Contact</Link>
 
                 <div className='py-10 grid gap-3'>
                 <div className="flex justify-center gap-5">
@@ -125,7 +125,7 @@ export default function Menu() {
                 -5 487 -364 1067 -799z"/>
                 </g>
                 </svg>
-                <p>cgc-wargaming@gmail.com</p>
+                <p>cgcminiatures@gmail.com</p>
                 </div>
                 </div>
             </li>
@@ -134,22 +134,24 @@ export default function Menu() {
 
 
     {/* desktop menu */}
-    <nav className='p-5'>
-        <ul className='sm:flex hidden justify-between gap-3'>
-            <li className='flex gap-3'>
-                <Link href="/Gallery" prefetch={false}>Gallery</Link>
-                <Link href="/About" prefetch={false}>About</Link>
+    <section className='p-5'>
+    <nav className='sm:p-5 sm:bg-transparent sm:border-2 sm:border-solid sm:rounded-full sm:border-cgc-logo'>
+        <ul className='sm:flex hidden justify-between gap-3 p-2'>
+            <li className='flex gap-3 ml-5'>
+                <Link href="/About" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo'>About</Link>
+                <Link href="/Gallery" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo' >Gallery</Link>
             </li>
 
             <li>
-                <Link href="/" prefetch={false} className='text-cgc-logo'>CGC</Link>
+                <Link href="/" prefetch={false} className='text-cgc-logo'>CGC W<span className='uppercase text-xs'>argaming</span></Link>
             </li>
 
-            <li className='flex gap-3'>
-                <Link href="/Contact" prefetch={false}>Contact</Link>
+            <li className='flex gap-3 mr-5'>
+                <Link href="/Contact" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo'>Contact</Link>
             </li>
         </ul>
     </nav>
+    </section>
     </>
   );
 }
