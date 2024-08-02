@@ -1,5 +1,6 @@
 import "./globals.css";
 import Menu from "./components/Menu";
+import Footer from "@/app/components/Footer"
 // import Footer from "./components/Footer";
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <main className="max-w-6xl mx-auto">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

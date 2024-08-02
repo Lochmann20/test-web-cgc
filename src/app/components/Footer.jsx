@@ -1,15 +1,14 @@
 
 import React from 'react'
-import Link from 'next/link'
 
 export default function footer() {
   return (
     <div className='text-White'>
       <hr className='text-white'/>
 
-      <div className='flex justify-between p-5'>
+      <div className='flex justify-between p-5 sm:p-7'>
         {/* Mobil */}
-        <div className='flex gap-2 items-center'>
+        <div className='flex gap-2 items-center sm:ml-8'>
           <svg 
           version="1.0" 
           xmlns="http://www.w3.org/2000/svg"       
@@ -44,7 +43,7 @@ export default function footer() {
 
 
         {/* Mail */}
-        <div className='flex gap-2 items-center'>
+        <div className='flex gap-2 items-center sm:mr-8'>
           <svg 
         version="1.0" 
         xmlns="http://www.w3.org/2000/svg"

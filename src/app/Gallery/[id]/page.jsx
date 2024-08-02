@@ -2,7 +2,7 @@
 
 import { supabase } from '@/app/lib/supabaseClient';
 import { notFound } from 'next/navigation';
-import Footer from '@/app/components/Footer';
+// import Footer from '@/app/components/Footer';
 import { useState, useEffect } from 'react';
 
 // Function to fetch related images by matching the base name
@@ -48,7 +48,6 @@ export default function ImagePage({ params }) {
   return (
     <>
       <div className="container mx-auto p-4">
-        <h1 className="text-2xl font-bold mb-4 text-White">{params.id}</h1>
         <div className="flex justify-center mb-4 mt-20">
           <img src={selectedImage} alt={params.id} className="max-w-full rounded-lg shadow-lg w-1/3 h-1/3" />
         </div>
@@ -58,13 +57,14 @@ export default function ImagePage({ params }) {
               key={image.name}
               src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${image.name}`}
               alt={image.name}
-              className="cursor-pointer w-24 h-24 object-cover border-2 border-solid rounded-lg"
+              className="cursor-pointer w-24 h-24 object-cover border-2 border-solid rounded-lg mt-10"
               onClick={() => setSelectedImage(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${image.name}`)}
             />
           ))}
         </div>
+        <h1 className="text-3xl font-serif mb-5 mt-10 text-White">{params.id}</h1>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
