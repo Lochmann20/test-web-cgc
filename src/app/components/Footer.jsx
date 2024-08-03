@@ -4,7 +4,7 @@ import React from 'react'
 export default function footer() {
   return (
     <div className='text-White'>
-      <hr className='text-white'/>
+      {/* <hr className='text-white'/> */}
 
       <div className='flex justify-between p-5 sm:p-7'>
         {/* Mobil */}
@@ -71,7 +71,7 @@ export default function footer() {
           -5 487 -364 1067 -799z"/>
           </g>
           </svg>
-          <p className='text-xs'>cgc-wargaming@gmail.com</p>
+          <p className='text-xs'>cgcminiatures@gmail.com</p>
         </div>
       </div>
     </div>

@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
     <section className="p-5 md:mt-10">
-    <h2 className='text-cgc-logo text-9xl font-serif'>W<span className='uppercase text-8xl'>argaming</span></h2>
-    <h3 className='text-cgc-tekst text-xl'>Har du brug for hjælp med at få samlet og malet en hel hær, <br />
+    <h2 className='text-cgc-logo text-4xl sm:text-9xl font-serif'>W<span className='uppercase text-3xl sm:text-8xl'>argaming</span></h2>
+    <h3 className='text-cgc-tekst text-base sm:text-xl'>Har du brug for hjælp med at få samlet og malet en hel hær, <br />
       commaner eller primarch der skal lidt mere iøjenfaldende.
     </h3>
 
@@ -16,7 +16,7 @@ export default function Home() {
       alt="warhammer" 
       width={900} 
       height={900}
-      className="ml-auto -mt-96" />
+      className="ml-auto -mt-12 sm:-mt-96" />
     </section>
     </>
   );
