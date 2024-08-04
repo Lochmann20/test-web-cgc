@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function footer() {
   return (
-    <div className='text-White'>
+    <div className='text-White left-0 bottom-0 w-full'>
       {/* <hr className='text-white'/> */}
 
       <div className='flex justify-between p-5 sm:p-7'>

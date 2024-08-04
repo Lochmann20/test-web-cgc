@@ -4,16 +4,15 @@ const Contact = () => {
   return (
     <>
     <section className="grid sm:flex sm:justify-between gap-5">
-      <div className="p-5 text-White sm:w-1/2 sm:mt-32 ">
-        <h1 className="text-6xl font-serif">Contact</h1> <br /> 
-        <p>Har du eller en du kender brug for hjælp. <br /> 
-          Så stiller jeg meget med glæde til rådighed med mine færdigheder og tricks. Jeg samler hovedsageligt Black Templars og Deathguards fra Warhammer 40k. Jeg vil gerne stå til rådhed når der er brug for det. <br />
-          Om det er en hel hær, commander eller primarch skal laves mere iøjenfaldende. Jeg kan kontaktes på både telefonnummer, <br />
-          mail eller via min instagram.
-        </p>
+      <div className="p-8 text-White sm:w-1/2 sm:mt-44 md:mt-36">
+        <p className="font-serif text-8xl md:text-9xl md:ml-28">
+          Let&apos;s  <br />
+          <span className="ml-20 md:ml-20"> talk </span>
+          </p>
       </div>
 
-    <div className="text-White sm:w-1/2 sm:mt-32">
+    <div className="text-White sm:w-1/2 sm:mt-32 border-l-2 border-solid p-5">
+    <h1 className="text-2xl font-serif">Contact information</h1> <br /> 
       <hr className="text-white"/>
 
     <div className="grid p-5 gap-3">
@@ -95,7 +94,7 @@ const Contact = () => {
 
   <div className="grid p-5 gap-3">
       <div>
-      <h2>SoMe</h2>
+      <h2>Instagram</h2>
       </div>
       <div className="flex gap-5">
       <svg 

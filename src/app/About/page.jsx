@@ -3,10 +3,10 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className='p-5 text-White mt-10 flex'>
-      <div>
+    <div className='p-8 text-White mt-0 sm:flex'>
+      <div className='sm:mt-40'>
       <h1 className='text-3xl font-serif'>About</h1> <br />
-      <p className='pr-8'>Mit navn er Caspar <br />
+      <p className='sm:pr-8 text-sm'>Mit navn er Caspar <br />
       Jeg har malet Warhammer i 10 år on and off og elsker at være kreativ i mine projekter. <br />
       Jeg samler hovedsageligt selv på Black Templars og Deathguards fra Warhammer 40k, <br />
       Men jeg kan bruge mine færdigheder og tricks til at skulle male hvad i har brug for. <br /> <br />
@@ -24,7 +24,7 @@ export default function page() {
         alt='profil'
         width={1000}
         height={1000}
-        className='' />
+        className='mt-10 mb-10' />
       </div>
     </div>
   )

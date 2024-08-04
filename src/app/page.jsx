@@ -5,18 +5,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <section className="p-5 md:mt-10">
-    <h2 className='text-cgc-logo text-4xl sm:text-9xl font-serif'>W<span className='uppercase text-3xl sm:text-8xl'>argaming</span></h2>
-    <h3 className='text-cgc-tekst text-base sm:text-xl'>Har du brug for hjælp med at få samlet og malet en hel hær, <br />
+    <section className="md:mt-10">
+    <h2 className='text-cgc-logo text-4xl sm:text-9xl font-serif'>Miniature <br /> 
+    <span className="sm:ml-20" >W<span className='uppercase text-3xl sm:text-8xl'>argaming</span> </span> 
+    </h2>
+    <h3 className='text-cgc-tekst text-base sm:text-xl sm:mt-10'>Har du brug for hjælp med at få samlet og malet en hel hær,
       commaner eller primarch der skal lidt mere iøjenfaldende.
     </h3>
 
       <Image 
-      src="/warhammer (3).png" 
+      src="/warhammer.png" 
       alt="warhammer" 
-      width={900} 
-      height={900}
-      className="ml-auto -mt-12 sm:-mt-96" />
+      width={830}
+      height={830}
+      className=" sm:ml-auto sm:-mr-48 sm:-mt-96" />
     </section>
     </>
   );

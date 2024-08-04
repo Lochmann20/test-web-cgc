@@ -24,13 +24,13 @@ export default function ImageGallery() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+    <div className="columns-2 sm:columns-3 gap-7">
       {mainCGC.map((CGC) => (
         <Link href={`/Gallery/${encodeURIComponent(CGC.name)}`} key={CGC.name}>
           <img
             src={`${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/CGC-Wargaming/${CGC.name}`}
             alt={CGC.name}
-            className="cursor-pointer border-2 border-solid rounded-xl"
+            className="cursor-pointer border-2 border-solid rounded-xl mb-7"
           />
         </Link>
       ))}
