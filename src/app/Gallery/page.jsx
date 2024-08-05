@@ -1,7 +1,7 @@
 
 
 import Gallery from '@/app/components/Gallery';
-// import Footer from '@/app/components/Footer';
+
 
 export default function Home() {
   console.log('Supabase URL:', process.env.NEXT_PUBLIC_SUPABASE_URL);
@@ -12,7 +12,7 @@ export default function Home() {
       <main className="container mx-auto p-4">
         <Gallery />
       </main>
-      {/* <Footer /> */}
+
     </div>
   );
 }
