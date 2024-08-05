@@ -16,7 +16,7 @@ export default function Menu() {
     <>   
 {/*Mobil menu  */}
     <nav className='sm:hidden p-5'>
-      <div className='flex justify-between bg-transparent border-2 border-solid border-cgc-logo rounded-full px-3 items-center'>
+      <div className='flex justify-between bg-menu-bg border-solid rounded-full px-3 items-center'>
         <div>
             <Link href="/" prefetch={false} className='text-cgc-logo font-serif'>CGC W<span className='uppercase text-xs'>argaming</span></Link>
         </div> 
@@ -135,7 +135,7 @@ export default function Menu() {
 
     {/* desktop menu */}
     <section className='p-5'>
-    <nav className='sm:p-5 sm:bg-transparent sm:border-2 sm:border-solid sm:rounded-full sm:border-cgc-logo'>
+    <nav className='sm:p-5 sm:bg-transparent bg-menu-bg sm:rounded-full'>
         <ul className='sm:flex hidden justify-between gap-3 p-2'>
             <li className='flex gap-3 ml-5'>
                 <Link href="/About" prefetch={false} className='text-White hover:text-cgc-logo focus:text-cgc-logo'>About</Link>

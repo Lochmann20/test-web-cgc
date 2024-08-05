@@ -5,13 +5,13 @@ const Contact = () => {
     <>
     <section className="grid sm:flex sm:justify-between gap-5">
       <div className="p-8 text-White sm:w-1/2 sm:mt-44 md:mt-36">
-        <p className="font-serif text-8xl md:text-9xl md:ml-28">
+        <p className="font-serif text-6xl md:text-9xl md:ml-28">
           Let&apos;s  <br />
-          <span className="ml-20 md:ml-20"> talk </span>
+          <span className="ml-20 md:ml-20"> Paint </span>
           </p>
       </div>
 
-    <div className="text-White sm:w-1/2 sm:mt-32 border-l-2 border-solid p-5">
+    <div className="text-White  sm:w-1/2 sm:mt-32 border-l-2 border-solid p-5">
     <h1 className="text-2xl font-serif">Contact information</h1> <br /> 
       <hr className="text-white"/>
 

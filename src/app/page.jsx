@@ -5,11 +5,12 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-    <section className="md:mt-10">
+    <section className="p-8 md:mt-10">
     <h2 className='text-cgc-logo text-4xl sm:text-9xl font-serif'>Miniature <br /> 
     <span className="sm:ml-20" >W<span className='uppercase text-3xl sm:text-8xl'>argaming</span> </span> 
     </h2>
-    <h3 className='text-cgc-tekst text-base sm:text-xl sm:mt-10'>Har du brug for hjælp med at få samlet og malet en hel hær,
+    <h3 className='text-cgc-tekst text-base sm:text-xl sm:mt-2'>
+      Har du brug for hjælp med at få samlet og malet en hel hær, <br />
       commaner eller primarch der skal lidt mere iøjenfaldende.
     </h3>
 

@@ -13,6 +13,7 @@ module.exports = {
       'White': '#fff',
       'cgc-tekst': '#7f7f7f',
       'contact-bg': '#18181873',
+      'menu-bg': '#0000002e',
     },
     extend: {
       backgroundImage: {
