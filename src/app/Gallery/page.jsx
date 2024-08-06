@@ -19,7 +19,7 @@ export default function Home() {
 
 
 
-// // Med 3D
+// Med 3D
 // 'use client';
 
 // import { useEffect, useState } from 'react';
